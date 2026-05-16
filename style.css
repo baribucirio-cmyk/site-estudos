@@ -138,7 +138,8 @@ article p{
     }
 
     table{
-      overflow-x: auto;  
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;  
       width:100%;
       min-width: 400px;
       border-collapse:collapse;
