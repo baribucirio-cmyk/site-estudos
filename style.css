@@ -138,7 +138,9 @@ article p{
     }
 
     table{
+      overflow-x: auto;  
       width:100%;
+      min-width: 400px;
       border-collapse:collapse;
     }
 
