@@ -137,16 +137,17 @@ article p{
       color:#38bdf8;
     }
 
-    table{
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;  
+    table{ 
+        padding-left: 10px;
+        margin-left: -25px;
+        margin-right: 40px;
       width:100%;
       min-width: 400px;
       border-collapse:collapse;
     }
 
     th, td{
-      padding:14px;
+      padding: 0px;
       text-align:center;
     }
 
