@@ -10,9 +10,9 @@
 }
 
 body{
+    background-image: url("imagem/1773388984321.png");
+    background-position: left top;
     font-family:Arial, Helvetica, sans-serif;
-    background:#f4f6f9;
-    color:#222;
     line-height:1.6;
 }
 
