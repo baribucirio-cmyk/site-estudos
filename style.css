@@ -10,10 +10,14 @@
 }
 
 body{
+    height: 100vp;
+    background-color: #001933;
     background-image: url("imagem/1773388984321.png");
     background-position: left top;
     font-family:Arial, Helvetica, sans-serif;
     line-height:1.6;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* HEADER */
