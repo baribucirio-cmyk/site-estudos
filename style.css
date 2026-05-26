@@ -69,9 +69,9 @@ nav a:hover{
 /* MAIN */
 
 main{
-    width: 300px;
+    width: 500px;
     margin:auto;
-    padding: 5px;
+    
 }
 main > p{
     text-align: center;
