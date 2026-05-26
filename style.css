@@ -10,7 +10,7 @@
 }
 
 body{
-    height: 100dvh;
+    height: 96dvh;
     background-color: #001933;
     background-image: url("imagem/IMG-20260420-WA0000.jpg");
     background-position: center center;
@@ -69,7 +69,7 @@ nav a:hover{
 /* MAIN */
 
 main{
-    width: 450px;
+    width: 300px;
     margin:auto;
     padding: 5px;
 }
