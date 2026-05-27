@@ -1,7 +1,4 @@
-@charset "UTF-8"
-
-
-
+@charset "UTF-8";
 
 *{
     margin:0;
@@ -10,14 +7,14 @@
 }
 
 body{
-    height: 96dvh;
-    background-color: #001933;
-    background-image: url("imagem/IMG-20260420-WA0000.jpg");
-    background-position: center center;
+    min-height:100vh;
+    background-color:#001933;
+    background-image:url("imagem/IMG-20260420-WA0000.jpg");
+    background-position:center center;
+    background-repeat:repeat;
+    background-size:cover;
+    background-attachment:fixed;
     font-family:Arial, Helvetica, sans-serif;
-    background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 /* HEADER */
@@ -27,11 +24,11 @@ header{
     color:white;
     text-align:center;
     padding:40px 20px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius:20px 20px 0px 0px;
 }
 
 header h1{
-    color: aquamarine;
+    color:aquamarine;
     font-size:38px;
     margin-bottom:10px;
 }
@@ -53,30 +50,38 @@ nav{
 }
 
 nav a{
-    color: aqua;
+    color:aqua;
     text-decoration:none;
     font-weight:bold;
     transition:0.3s;
 }
 
 nav a:hover{
-    background-color: rgb(92, 6, 24);
+    background-color:rgb(92, 6, 24);
     color:gold;
-    padding: 10px 10px;
-    border-radius: 10px;
+    padding:10px;
+    border-radius:10px;
 }
 
 /* MAIN */
 
 main{
-    width: 500px;
+    width:90%;
+    max-width:900px;
     margin:auto;
-    
 }
+
 main > p{
-    text-align: center;
-    color: #222;
-    font: italic bold 2em serif;
+    text-align:center;
+    color:#222;
+    font:italic bold 2em serif;
+}
+
+/* IMAGENS */
+
+img{
+    max-width:100%;
+    height:auto;
 }
 
 /* BANNER */
@@ -111,90 +116,110 @@ article p{
     margin-bottom:20px;
 }
 
-    .profile{
-      background-color: #002244d2;
-      color: white;
-      font: bold 1.2em;
-      padding:20px;
-      border-radius:15px;
-      display:flex;
-      gap:20px;
-      flex-wrap:wrap;
-      margin-bottom:30px;
-    }
+/* PROFILE */
 
-    .profile div{
-      flex:1;
-      min-width:220px;
-    }
-    .card{
-      background:rgba(255,255,255,0.08);
-      text-align: center;
-      padding: 10px;
-      border-radius:15px;
-      margin: auto;
-    }
+.profile{
+    background-color:#002244d2;
+    color:white;
+    font:bold 1.2em;
+    padding:20px;
+    border-radius:15px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
 
-    .card h2{
-      margin: auto;
-      color:#38bdf8;
-    }
+.profile div{
+    flex:1;
+    min-width:220px;
+}
 
-    table{ 
-        padding-left: 10px;
-      width:100%;
-      min-width: 400px;
-      border-collapse:collapse;
-    }
+/* CARDS */
 
-    th, td{
+.card{
+    background:rgba(255,255,255,0.08);
+    text-align:center;
+    padding:10px;
+    border-radius:15px;
+    margin:auto;
+}
 
-    }
+.card h2{
+    margin:auto;
+    color:#38bdf8;
+}
 
-    th{
-      background:#0285c7;
-    }
+/* TABLE */
 
-    tr:nth-child(even){
-      background:rgba(255,255,255,0.05);
-    }
+.table-container{
+    overflow-x:auto;
+}
 
-    tr:hover{
-      background:rgba(56,189,248,0.2);
-      transition:0.3s;
-    }
+table{
+    width:100%;
+    min-width:400px;
+    border-collapse:collapse;
+    padding-left:10px;
+}
 
-    .approved{
-      color:#22c55e;
-      font-weight:bold;
-    }
+th,
+td{
+    padding:12px;
+    text-align:center;
+}
 
-    .reproved{
-      color:#ef4444;
-      font-weight:bold;
-    }
+th{
+    background:#0285c7;
+    color:white;
+}
 
-    .stats{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-    }
+tr:nth-child(even){
+    background:rgba(255,255,255,0.05);
+}
 
-    .stat-box{
-      background-color: #0285c7;
-      padding:20px;
-      border-radius:15px;
-      text-align:center;
-    }
+tr:hover{
+    background:rgba(56,189,248,0.2);
+    transition:0.3s;
+}
 
-    .stat-box h3{
-      color: black;
-      margin-bottom:10px;
-    }
-/* DISCIPLINAS */
+.approved{
+    color:#22c55e;
+    font-weight:bold;
+}
+
+.reproved{
+    color:#ef4444;
+    font-weight:bold;
+}
+
+/* STATS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat-box{
+    background-color:#0285c7;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat-box h3{
+    color:black;
+    margin-bottom:10px;
+}
+
+/* CURSOS */
 
 .cursos{
     margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .cursos h2{
@@ -202,12 +227,6 @@ article p{
     margin-bottom:30px;
     color:#003366;
     font-size:32px;
-}
-
-.cursos{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
 }
 
 .cursos div,
@@ -230,6 +249,8 @@ article p{
     margin-bottom:10px;
 }
 
+/* CARREIRA */
+
 .carreira{
     background:white;
     padding:25px;
@@ -242,28 +263,116 @@ article p{
     margin-bottom:10px;
 }
 
-button {
-  padding: 10px;
-  border-radius: 10px;
-  background: #002244;
-  color: white;
-  border: none;
-  cursor: pointer;
+/* BUTTON */
+
+button{
+    padding:10px;
+    border-radius:10px;
+    background:#002244;
+    color:white;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#004080;
 }
 
 /* FOOTER */
 
 footer{
-    background: #002244;
+    background:#002244;
     color:white;
     text-align:center;
-    padding: 30px;
-    margin: auto;
-    border-radius: 0px 0px 10px 10px;
+    padding:30px;
+    margin:auto;
+    border-radius:0px 0px 10px 10px;
 }
 
-header h1{
-    font-size:28px;
+/* RESPONSIVIDADE */
+
+@media (max-width:768px){
+
+    header{
+        padding:25px 15px;
+    }
+
+    header h1{
+        font-size:28px;
+    }
+
+    header p{
+        font-size:15px;
+    }
+
+    nav{
+        gap:10px;
+        padding:12px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .banner{
+        height:220px;
+    }
+
+    article{
+        padding:20px;
+    }
+
+    .profile{
+        flex-direction:column;
+    }
+
+    table{
+        min-width:600px;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .cursos{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media (max-width:480px){
+
+    header h1{
+        font-size:22px;
+    }
+
+    header p{
+        font-size:13px;
+    }
+
+    main > p{
+        font-size:1.3em;
+    }
+
+    .banner{
+        height:180px;
+    }
+
+    article{
+        padding:15px;
+    }
+
+    .card,
+    .carreira,
+    .cursos div{
+        padding:18px;
+    }
+
+    button{
+        width:100%;
+    }
+
 }
 
 
