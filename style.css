@@ -66,9 +66,9 @@ nav a:hover{
 /* MAIN */
 
 main{
-    width:90%;
-    max-width:900px;
-    margin:auto;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
 }
 
 main > p{
@@ -84,7 +84,7 @@ img{
     height:auto;
 }
 
-/* BANNER */
+
 
 .banner{
     width:100%;
@@ -157,7 +157,7 @@ article p{
 }
 
 table{
-    width:100%;
+    width: 100%;
     min-width:400px;
     border-collapse:collapse;
     padding-left:10px;
