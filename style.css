@@ -165,15 +165,21 @@ article p{
     border-radius: 8px;
     
 }
-
+h2.titulo{
+    text-align: center;
+}
 table{
     width: 100%;
     min-width: 100%;
     border-collapse:collapse;
     padding-left:10px;
+    position: relative;
 }
 
-th,
+thead > tr > th {
+    position: static;
+    top: 0;
+}
 td{
     padding:12px;
     text-align:center;
